@@ -22,9 +22,8 @@ So that it can be classified that which tweets is the real disaster tweets.
 1. Data Loading.
 2. Exploratory Data Analysis
 3. PreProcessing
-4. Scaling and Fitting the model.
+4. Fitting the model with Parameter Tuning.
 5. Performance evaluation
-6. Optimizing Model with Parameter Tuning
 
 <H2> Data Loading </H2>
 
@@ -66,4 +65,55 @@ plt.show()
 Word Cloud of the Abbreveations used 
 
 ![image](https://user-images.githubusercontent.com/22946038/114455492-71013a80-9bf9-11eb-885d-b2c32520e846.png)
+
+
+<H2> PreProcessing</H2>
+
+Pre processing is the most important phase .
+As we are dealing with NLP , it is little different than the Numeric preprocessing Techninques.
+
+The list of filters used for preprocessing the tweets are as follows 
+
+1. Url
+2. Html
+3. Non Ascii
+4. abbreveation replacement
+5. removing mentions
+6. number
+7. punctuations
+8. stop words
+
+The above were used to clean the text before vectorization
+
+Below is the glimpse of befor and after
+
+![image](https://user-images.githubusercontent.com/22946038/114456754-dbff4100-9bfa-11eb-80cc-9e50eb183eda.png)
+
+for vectorization of textual data , the two most popular methods are 
+1. count vectorization 
+2. TIDIF vectorization
+
+<H2> Fitting the Model </H2>
+
+To classify Randonm Forest Classifies has been used for the demonstration
+
+```classifier = RandomForestClassifier(n_estimators=1000, random_state=0)```
+
+The number of estimator can be decided by the testing with different values which size of estimator is giving you the best result.
+
+For eg. the following model has been tested over multiple estimator size to determine which one giveing the most accurate results
+
+![image](https://user-images.githubusercontent.com/22946038/114457364-90996280-9bfb-11eb-9b7d-03821bb63228.png)
+
+
+<H2>Performance evaluation <H2>
+  
+ ```print(confusion_matrix(y_test,y_pred))
+print(classification_report(y_test,y_pred))
+print(accuracy_score(y_test, y_pred))
+```
+
+![image](https://user-images.githubusercontent.com/22946038/114457528-c50d1e80-9bfb-11eb-8bb6-015abd29cbc1.png)
+
+The number of estimator = 1000 gave the best result .
 
