@@ -106,7 +106,7 @@ For eg. the following model has been tested over multiple estimator size to dete
 ![image](https://user-images.githubusercontent.com/22946038/114457364-90996280-9bfb-11eb-9b7d-03821bb63228.png)
 
 
-<H2>Performance evaluation <H2>
+<H2>Performance evaluation </H2>
   
  ```print(confusion_matrix(y_test,y_pred))
 print(classification_report(y_test,y_pred))
