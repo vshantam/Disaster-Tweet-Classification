@@ -17,3 +17,16 @@ So that it can be classified that which tweets is the real disaster twets.
 8. Vectorization 
 
 
+<H3> Section Wise Implementation Guides </H3>
+
+1. Data Loading.
+2. Exploratory Data Analysis
+3. PreProcessing
+4. Scaling and Fitting the model.
+5. Performance evaluation
+6. Optimizing Model with Parameter Tuning
+
+<H2> Data Loading </H2>
+
+
+
