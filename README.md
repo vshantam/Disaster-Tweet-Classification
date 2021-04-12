@@ -3,7 +3,7 @@
 <H3> This Project is to work on Natural language processing techniques to slove  language based problems.</H3>
 
 This project deals with the classification problem for the disaster tweets.
-So that it can be classified that which tweets is the real disaster twets.
+So that it can be classified that which tweets is the real disaster tweets.
 
 <H3> Pre requisistes</H3>
 
@@ -28,5 +28,6 @@ So that it can be classified that which tweets is the real disaster twets.
 
 <H2> Data Loading </H2>
 
+```df = pd.read_csv("train.csv",engine="python", delimiter=",")```
 
 
