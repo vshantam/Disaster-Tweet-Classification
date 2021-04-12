@@ -47,7 +47,8 @@ Top Locations used in Dataset
 ```locations_vc = df["location"].value_counts()
 sns.barplot(y=locations_vc[0:30].index, x=locations_vc[0:30], orient='h')
 plt.title("Top 30 Locations")
-plt.show()```
+plt.show()
+```
 
 ![image](https://user-images.githubusercontent.com/22946038/114455316-3e574200-9bf9-11eb-83c6-121ac30f6409.png)
 
@@ -56,7 +57,8 @@ Top Keywords used in Dataset
 ```keyword_vc = df["keyword"].value_counts()
 sns.barplot(y=keyword_vc[0:30].index, x=keyword_vc[0:30], orient='h')
 plt.title("Top 30 keyword")
-plt.show()```
+plt.show()
+```
 
 ![image](https://user-images.githubusercontent.com/22946038/114455363-4d3df480-9bf9-11eb-87b0-00c7d2a4ef6e.png)
 
